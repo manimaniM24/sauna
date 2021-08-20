@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'HG明朝E';
+    color : #306c38 ;
+}
+
+a {
+    text-decoration: none;
+    color : #306c38 ;
+    font-family: 'Alegreya';
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+body {
+    background-color: #fff;
+}
+
+.firstView {
+    margin: 0;
+    padding: 0;
+}
+
+.firstView_ipad {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.firstView img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.firstView_ipad img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.container {
+    max-width: 1920px;
+    text-align: center;
+}
+
+.title_text {
+    padding: 4.7rem;
+}
+
+.title_text_sopt {
+    padding: 3.7rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.title_text_sopt_ipad {
+    padding: 3.7rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    display: none;
+}
+
+.title_text h3{
+    font-family: 'HG明朝E';
+    line-height: 3.5rem;
+    font-size: 2.5rem;
+}
+
+.container {
+    background-color: #bcf5c5;
+    max-width: 1146px;
+    margin: 0 20%;
+}
+
+.number_li {
+    text-align: center;
+}
+
+.number_li_button {
+    display: inline-block;
+    font-size: 2.5rem;
+    background-color: #fff;
+    padding: 6px 16px;
+    margin-right: 96px;
+    border-radius: 7px;
+    font-family: 'Alegreya';
+}
+
+.number_li_button_A {
+    margin-right: 0px;
+}
+
+.spot_h {
+    margin-top: 5rem;
+}
+
+.spot_firstImag img {
+    width: 100%;
+    vertical-align: bottom;
+    margin-top: 35px;
+}
+
+.spot_secondImg {
+    margin-top: 2rem;
+}
+
+.spot_li {
+    width: 25%;
+    margin-top: 3%;
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+.spot_li_mR {
+    margin-right: 0;
+}
+
+.spot_li_img {
+    position: relative;
+}
+
+.spot_li_img img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.spot_li_number {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'Alegreya';
+}
+
+.spot_li_text {
+    width: 100%;
+    margin-top: 3%;
+    font-family: 'HG明朝E';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #306c38;
+}
+
+.spot_li_text_iphone {
+    width: 100%;
+    margin-top: 3%;
+    font-family: 'HG明朝E';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #306c38;
+    display: none;
+}
+
+.spot_button_line {
+    width: 40%;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0 auto;
+    border-bottom: solid 0.2rem #fff;
+    padding-bottom: 2rem;
+}
+
+.spot_button_text {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 3.6rem;
+    width: 7%;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.spot_button_text p {
+    font-size: 2rem;
+    font-family: 'HG明朝E';
+}
+
+.information {
+    width: 75%;
+    border-bottom: solid 0.2rem #fff;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.information_text {
+    font-size: 2rem;
+}
+
+.information_text::after {
+    content: "+";
+    color: #fff;
+    float: right;
+    font-size: 5rem;
+    line-height: 2.2rem;
+}
+
+.infotmation_h {
+    margin-top: 10rem;
+}
+
+.acd_a {
+    font-family: 'HG明朝E';
+}
+
+.top {
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.top_button {
+    width: 10%;
+    height: 10%;
+    padding: 3.3% 0%;
+    font-family: 'Alegreya';
+    font-size: 2rem;
+    border: solid 0.2rem #fff;
+    border-radius: 100%;
+    margin-top: 10rem;
+    margin-left: 78%;
+}
+
+.fotter {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.fotter_logo img {
+    width: 26%;
+    padding: 6rem;
+}
+
+/*インタラクション↓*/
+
+.acd-check {
+    display: none;
+}
+
+.acd_content {
+    height: 0;
+    text-align: left;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+}
+
+.acd_content_bottom {
+    height: 0;
+    text-align: left;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.acd-check:checked + .information_text +.acd_content {
+    height: 15rem;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 3rem;
+}
+
+.acd-check:checked + .information_text + .acd_content_bottom {
+    height: 11rem;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 3rem;
+}
+
+.acd-check:checked + .information_text::after {
+    content: '-';
+}
+
+.number_li_button:hover {
+    background-color: #306c38;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.spot_button_text:hover {
+    background-color: #306c38;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.top_button:hover {
+    background-color: #306c38;
+    color: #fff;
+    transition: 0.5s;
+    border: solid 0.2rem #306c38;
+}
+
+/*レスポンシブ*/
+
+@media screen and (max-width: 1024px) {
+    .firstView {
+        display: none;
+    }
+    .firstView_ipad {
+        display: block;
+    }
+    .title_text_sopt {
+        display: none;
+    }
+    .title_text_sopt_ipad {
+        display: block;
+    }
+    .top_button {
+        padding: 3.3% 0.5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 0;
+    }
+    .title_text {
+        font-size: 2.2rem;
+    }
+    .number_li_button {
+        margin-right: 44px;
+    }
+    .number_li_button_A {
+        margin-right: 0;
+    }
+    .spot_li_text_iphone {
+        display: block;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .spot_li_text{
+        margin-top: 10%;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-feature-settings: "plat";
+    } 
+    .spot_li_text_no_iphone {
+        display: none;
+    }
+    .spot_li_text_iphone {
+        display: block;
+        width: 100%;
+        font-family: 'HG明朝E';
+        color: #306c38;
+        margin-top: 10%;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-feature-settings: "plat";
+    }
+    .spot_li_number {
+        font-size: 2rem;
+    }
+    .title_text_sopt_ipad {
+        font-size: 1.7rem;
+        line-height: 3.2rem;
+    } 
+    .spot_button_text {
+        width: 15%;
+    }
+    .information_text {
+        font-size: 1.8rem;
+    }
+    .information_text::after {
+        font-size: 4rem;
+    }
+    .acd_a {
+        font-size: 1.5rem;
+    }
+    .top_button {
+        padding: 3.3% 1.8%;
+    }
+    .fotter_logo img {
+        width: 68%;
+    }
+}
